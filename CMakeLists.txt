@@ -9,4 +9,4 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Set target
-add_executable(impakt src/app/main.cpp)
+add_executable(${PROJECT_NAME} src/app/main.cpp)
