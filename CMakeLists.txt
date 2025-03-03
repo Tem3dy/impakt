@@ -1,5 +1,5 @@
 # Minimum CMake version
-cmake_minimum_required(VERSION 3.20)
+cmake_minimum_required(VERSION 3.30)
 
 # Project definition
 project(impakt VERSION 0.1)
