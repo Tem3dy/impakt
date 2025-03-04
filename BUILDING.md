@@ -1,10 +1,11 @@
 # Building the project
 
-A short guide on how to build the project (currently linux only)
+A guide on how to build the project (linux only)
 
 ## Requirements
-- CMake 3.20 or higher
-- GCC 11.0+ or clang
+- CMake **3.30+**
+- Ninja **1.10+**
+- GCC **11.0+** or clang **11.0+**
 
 ## Building
 1. Clone the repository:
@@ -13,20 +14,18 @@ git clone https://github.com/Tem3dy/impakt.git
 cd impakt
 ```
 
-2. Create a build directory:
+2. Configure CMake:
 ```bash
-mkdir build
-cd build
+cmake -B build -G Ninja
 ```
 
-3. Configure and build the project:
+3. Build the project:
 ```bash
-cmake ..
-cmake --build .
+cmake --build build
 ```
 
 4. Run the app
 ```bash
-./impakt
+./build/impakt
 ```
  
